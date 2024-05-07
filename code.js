@@ -46,8 +46,3 @@ function permutationSort(a) {
         }
     }
 }
-
-// Example usage
-let arr = [0, 10, 7, 14, 6];
-let numPermutations = permutationSort(arr);
-console.log("Array: " + arr + " sorted after " + numPermutations + " permutations.");
