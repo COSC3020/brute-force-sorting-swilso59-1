@@ -21,3 +21,27 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+In my code I am getting all the permutations and checking each one if it is sorted.
+We have N which is the length of the array. In the code there are 4 sections to anaylze.
+swapElements: This function swaps the elements in the array in order to create the permutations.
+isSorted: Checks if the array is sorted.
+generatePermutations: This function uses swapElements to genereate the permutations of the array.
+permutationSort: Uses generated permutations to find the sorted array. 
+
+## Worst Case 
+In the worst case senerio the array would be in reverse order causing the algorithm to need to create and check every permutation before finding the sorted array. If the array is size N the number of permutations would be N! making the worst case time complexity $O(N!)$
+
+## Best Case 
+The best case sinerio would be when the array is already sorted. In this case the algorithm would only need to check the first permutation which would typically give the best case time complexity of $O(1)$ however in this algorithm we are still need to get alal the permutations which would leave us with the best case time complexity of $O(N!)$.
+
+## Randomly generated permutations
+If the permutations were generated randomly this could cause an increased efficienticy in the average case. Howevere would not effect the worst case becasue by chance it may still have to check all the permutations of the array before finding the sorted permutation. 
+
+\\ I recieved help form the TA 
+\\ I reviewed repositories from 
+\\ brute-force-sorting-Dhruv8806
+\\ brute-force-sorting-IshitaPatel18
+\\ brute-force-sorting-swilso59
+\\ brute-force-sorting-boboestes14
+
